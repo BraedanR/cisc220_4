@@ -14,7 +14,7 @@ char* safestrcat( char *a, char *b) {
 
 int substring(char *source, int from, int n, char *target) {
 	int length = strlen(source);
-	char temp[length] = {'\0'}
+	char temp[length] = {'\0'};
 	strcpy(temp, target);
 	int count = 0;
 	int i;
