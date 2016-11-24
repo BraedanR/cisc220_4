@@ -21,8 +21,9 @@ int substring(char *source, int from, int n, char *target) {
 
 	for (i=0; i < length; ++i) {
 		if (i >= from) {
-			if (count <= n) {		
-				strcat(target, source[i]);
+			if (count <= n) {
+				char value = source[i];		
+				strcat(target, value);
 			}
 		}
 		++count;
