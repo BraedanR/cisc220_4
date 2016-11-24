@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlin.h>
+#include "mystring.h"
 
 char* safestrcat( char *a, char *b) {
 	int alen = strlen(a);

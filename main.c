@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlin.h>
+#include "mystring.h"
 
 int main () {
 	char course[5] = "CISC";
