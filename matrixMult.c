@@ -1,3 +1,6 @@
+//Luisa Aimoli 10169687
+//Braedan Robinson
+
 #include<stdio.h>
 #include<stdlib.h>
 
