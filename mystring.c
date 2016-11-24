@@ -17,6 +17,7 @@ int substring(char *source, int from, int n, char *target) {
 	strcpy(temp, target);
 	int count = 0;
 	int length = strlen(source);
+	int i;
 
 	for (i=0; i < length; ++i) {
 		if (i >= from) {
