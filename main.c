@@ -6,9 +6,9 @@
 #include "mystring.h"
 
 int main () {
-	char what[5] = "C Programming";
-	char isit[4] = "Laguage";
-	char stri[10];
+	char what[12] = "Programming";
+	char isit[9] = "Laguage";
+	char stri[22];
 
 char* s = safestrcat(what, isit);
 printf("safestrcat(what, isit) returns: %s\n", s);
