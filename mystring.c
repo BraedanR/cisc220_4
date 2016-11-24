@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlin.h>
+#include <stdlib.h>
 #include "mystring.h"
 
 char* safestrcat( char *a, char *b) {
