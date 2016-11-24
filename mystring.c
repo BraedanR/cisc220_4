@@ -13,16 +13,16 @@ char* safestrcat( char *a, char *b) {
 }
 
 int substring(char *source, int from, int n, char *target) {
-	char *temp;
+	int length = strlen(source);
+	char temp[len]; = {'\0'}
 	strcpy(temp, target);
 	int count = 0;
-	int length = strlen(source);
 	int i;
 
 	for (i=0; i < length; ++i) {
 		if (i >= from) {
 			if (count <= n) {
-				char value = source[i];		
+				char *value = source[i];		
 				strcat(target, value);
 			}
 		}
