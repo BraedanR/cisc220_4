@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 //Take 4 inputs from the user. Matrix 1 #columns must = #row Matrix 2 
 //If condition isn't met, reprompt user, and write to error to Dimensions
@@ -10,20 +11,20 @@
 //Print Matrix 1 and 2
 
 int* createArray(int rows, int columns, int mtxNum) {
-  int *ptr;
-  char newMtx[rows][columns];
-  printf("Insert matrix %d elements separated by a space: ",mtxNum);
-  int numOfElmts = (rows * columns);
+  int numOfElmts = (rows * columns);  
   printf("%d", numOfElmts);
+  int *newMtx = malloc(sizeof(int)*numOfElmts);
+  printf("Insert matrix %d elements separated by a space: ",mtxNum);
+  //int numOfElmts = (rows * columns);
+  //printf("%d", numOfElmts);
   scanf("%(numOfElmts)d" , newMtx);
-  return ptr;
+  return newMtx;
 }
 
 int main(){
   int mtx_1[2];
   printf("Insert matrix 1 dimensions separated by a space: ");
-  scanf("%d %d", mtx_1, mtx_1+1);
-  printf("%d %d\n", mtx_1[0], mtx_1[1]); 
+  scanf("%d %d", mtx_1, mtx_1+1); 
   int rows1 = mtx_1[0];
   int cols1 = mtx_1[1];
 
@@ -37,6 +38,7 @@ int main(){
   int *ptr2;
   ptr1 = createArray(rows1, cols1, 1);
   ptr2 = createArray(rows2, cols2, 2);
-
+free(ptr1);
+free(ptr2);
 return 0;
 }
