@@ -27,6 +27,13 @@ int** createArray(int rows, int columns, int mtxNum) {
       for( y = 0; y < columns; y ++) {
          scanf("%d", &newMtx[x][y]);
     }  }
+  printf("Matrix %d:\n", mtxNum);
+  for (int x = 0; x < rows; x++) {
+      for (int y = 0; y < columns; y++) {
+            printf("     %d", newMtx[x][y]);
+      }
+      printf("\n");
+  }
   return newMtx;
 }
 
@@ -53,7 +60,7 @@ int main(){
 }
   int **ptr1 = createArray(rows1, cols1, 1);
   int **ptr2 = createArray(rows2, cols2, 2);
- 
+
 free(ptr1);
 free(ptr2);
 }
