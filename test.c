@@ -13,6 +13,12 @@ char buff[255];
 int i;
 
 fp = fopen("poem.txt", "r+");//read and overwrite
+  
+if (fp == NULL) {
+void perror();
+exit(-1);
+}
+  
 while (1) {
   fgets(buff, 255, fp);//gets character array of lines
   if (feof(fp)) { //end of file
